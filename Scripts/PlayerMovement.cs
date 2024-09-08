@@ -40,23 +40,23 @@ private void Start() {
 
     public void MoveUp(){
         moveup = true;
-        pacman.velocity = Vector2.up;
+        pacman.velocity = Vector2.up * speed;
     }
 
     public void MoveDown(){
         movedown = true;
-        pacman.velocity = Vector2.down;
+        pacman.velocity = Vector2.down * speed;
     }
 
     public void MoveLeft(){
         moveleft = true;
-        pacman.velocity = Vector2.left;
+        pacman.velocity = Vector2.left * speed;
         pacman.transform.localScale = new Vector2(-1f, 1f);
     }
 
     public void MoveRight(){
         moveright = true;
-        pacman.velocity = Vector2.right;
+        pacman.velocity = Vector2.right * speed;
         pacman.transform.localScale = new Vector2(1f, 1f);
 
     }
